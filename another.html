@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LovatoEnterprise</title>
+    <style>
+        header {
+            font-size: larger;
+            background-color: black;
+            display: flex;
+            color: white;
+            width: 100%;
+            height: 10vh;
+            padding: 10px;
+            justify-content: center;
+            text-align: center;
+            font-size: 50px;
+        }
+        nav {
+            padding: 10px;
+            gap: 10px;
+            display: flex;
+            font: 1em sans-serif;
+            color: skyblue;
+            background-color: whitesmoke;
+        }
+        nav a {
+            margin: 10px;
+            padding: 10px;
+            color: skyblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: blue;
+        }
+        footer {
+            color: green;
+            background-color: wheat;
+            padding: 4px;
+            text-align: center;
+        }
+        .form {
+            background-image: url("tech.jpg");
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .inner {
+            font: 1em sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 4px;
+            padding: 5px;
+            margin: 5px;
+            background-color: skyblue;
+        }
+        .inner h1 {
+            font-size: 20px;
+        }
+        .inner input[type="text"],
+        .inner input[type="date"] {
+            width: 70%;
+            background-color: white;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 0;
+            border: 1px solid #ccc;
+        }
+        .inner input[type="text"]:hover,
+        .inner input[type="submit"]:hover {
+            color: blue;
+        }
+        .dashboard-content {
+            display: none;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f9;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        }
+        .dashboard-content h2 {
+            font-size: 24px;
+            color: #4CAF50;
+        }
+        .dashboard-content p {
+            font-size: 16px;
+            color: #333;
+        }
+        .para {
+            font-size: 20px;
+            background-color: grey;
+            text-align: center;
+            color: white;
+        }
+        .social-media{
+            display: flex;
+            justify-content: center;
+            gap: 55px;
+            background-color: skyblue;
+        }
+        .social-media a img{
+            width: 50px;
+            height: 5vh;
+            margin-top: 5px;
+        }
+        .social-media a image:hover{
+            transform: scale(1.1);}
+    </style>
+    <script>
+        function toggleDashboardContent() {
+            const dashboardContent = document.getElementById('dashboardContent');
+            if (dashboardContent.style.display === 'none' || dashboardContent.style.display === '') {
+                dashboardContent.style.display = 'block';
+            } else {
+                dashboardContent.style.display = 'none';
+            }
+        }
+        // Placeholder functions for other nav links
+        function toggleMissionandVisionContent() { alert("Mission and Vision content toggle placeholder."); }
+        function toggleManagementContent() { alert("Management content toggle placeholder."); }
+        function toggleProjectManagementToolsContent() { alert("Project Management Tools content toggle placeholder."); }
+        function toggleDataandAnalyticsContent() { alert("Data and Analytics content toggle placeholder."); }
+        function toggleResourceCenterContent() { alert("Resource Center content toggle placeholder."); }
+        function toggleNewsandUpdatesContent() { alert("News and Updates content toggle placeholder."); }
+        function toggleFeedbackandSupportContent() { alert("Feedback and Support content toggle placeholder."); }
+        function toggleSecurityContent() { alert("Security content toggle placeholder."); }
+        function toggleCommunityContent() { alert("Community content toggle placeholder."); }
+    </script>
+</head>
+<body>
+    <header><strong>LovatoEnterprise</strong></header>
+    <nav>
+        <a href="https://www.technoserve.org/"  onclick="toggleMissionContent()">Mission</a>
+        <a href="#" onclick="toggleManagementContent()">Management</a>
+        <a href="#" onclick="toggleProjectManagementToolsContent()">Project Tools</a>
+        <a href="#" onclick="toggleDataandAnalyticsContent()">Analytics</a>
+        <a href="#" onclick="toggleResourceCenterContent()">Resource</a>
+        <a href="#" onclick="toggleNewsandUpdatesContent()">News</a>
+        <a href="#" onclick="toggleFeedbackandSupportContent()">Feedback</a>
+        <a href="#" onclick="toggleSecurityContent()">Security</a>
+        <a href="#" onclick="toggleCommunityContent()">Community</a>
+    </nav>
+    
+    <div id="dashboardContent" class="dashboard-content">
+        <h2>Data Analytics Dashboard</h2>
+        <p>Use visualizations to present data analytics related to your services or products, such as user activity, sales trends, or system performance.</p>
+    </div>
+
+    <div class="form">
+        <div class="inner">
+            <form action="action.php" method="post">
+                <h1>Book a TechnoEnterprise Talk</h1>
+                <input type="text" id="name" name="name" placeholder="Enter Name">
+                <input type="date" id="appointment" name="appointment_date" placeholder="Make an appointment">
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+        </div>
+        <div class="para">
+            <h2>Why TechnoEnterprise</h2>
+            <p>Welcome to Techno Enterprise, where innovation meets excellence! At Techno Enterprise, we are dedicated to providing cutting-edge solutions that empower businesses to thrive in the digital age. With a comprehensive range of services including software development, IT consulting, and digital marketing, our expert team is committed to delivering tailor-made strategies that align with your unique goals. We harness the latest technologies to streamline processes, enhance efficiency, and drive growth, ensuring that our clients stay ahead of the competition. Join us on a journey of transformation and let Techno Enterprise elevate your business to new heights!</p>
+
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LovatoEnterprise. All rights reserved.</p>
+    </footer>
+    <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">
+            <img src="facebook-icon.png" alt="Facebook"> LovatoEnterprise
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
+            <img src="instagram-icon.png" alt="Instagram"> LovatoEnterprise
+        </a>
+    </a>
+    <a href="https://www.whatsapp.com" target="_blank" class="social-icon whatsapp">
+        <img src="whatsapp-icon.png" alt="Whatsapp"> +254794656850
+    </a>
+        <a href="mailto:example@example.com" class="social-icon email">
+            <img src="email-icon.png" alt="Email"> @lovatoenterprise
+        </a>
+    </div>
+  <script>
+ // Function to hide all content sections
+function hideAllSections() {
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+}
+
+// Function to show a specific section based on its ID
+function showSection(sectionId) {
+    hideAllSections();
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.style.display = 'block';
+    }
+}
+
+// Event listeners for each nav link
+document.querySelector('[href="#"]').addEventListener('click', () => showSection('dashboardContent'));
+document.querySelector('[href="#"]').addEventListener('click', () => showSection('missionContent'));
+document.querySelector('[href="#"]').addEventListener('click', () => showSection('managementContent'));
+document.querySelector('[href="#"]').addEventListener('click', () => showSection('projectToolsContent'));
+document.querySelector('[href="#"]').addEventListener('click', () => showSection('dataAnalyticsContent'));
+document.querySelector('[href="#"]').addEventListener('click', () => showSection('resourceCenterContent'));
+document.querySelector('[href="#"]').addEventListener('click', () => showSection('newsUpdatesContent'));
+document.querySelector('[href="#"]').addEventListener('click', () => showSection('feedbackSupportContent'));
+document.querySelector('[href="#"]').addEventListener('click', () => showSection('securityContent'));
+document.querySelector('[href="#"]').addEventListener('click', () => showSection('communityContent'));
+
+
+  </script>
+</body>
+</html>
