@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - LovatoEnterprise</title>
+    <style>
+        /* Global Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 4px;
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent for readability */
+}
+
+.container h1 {
+    color: blue;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    margin: 0;
+}
+
+.container h2 {
+    color: blue;
+    font-weight: bolder;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.another {
+    background-color: #1E90FF;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+/* Input Styling */
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="submit"],
+button {
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Submit Button Styling */
+.container input[type="submit"],
+button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.container input[type="submit"]:hover,
+button:hover {
+    background-color: blue;
+}
+
+.container a {
+    color: blue;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Form Styling */
+.form {
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #1E90FF;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+}
+
+        /* Your CSS code remains the same */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><b>LovatoEnterprise</b></h1>
+        <h2>Welcome</h2>
+        
+        <div class="form">
+            <form action="another.html" method="get">
+                <input type="text" id="name" placeholder="Username" required><br>
+                <input type="password" id="pass" placeholder="Password"><br>
+                <input type="checkbox" id="rad">
+                <label for="rad">Remember my Username</label>
+                <br><br>
+                <button type="submit">Log in</button>
+                <a href="#">Forgot username or password?</a>
+            </form>
+        </div>
+
+        <div class="another">
+            <div>New to LovatoEnterprise</div>
+            <div><a href="#">Open an account or sign up</a></div>
+            <div><a href="#">Security</a></div>
+            <div><a href="#">FAQs</a></div>
+        </div>
+    </div>
+
+ 
+</body>
+</html>
